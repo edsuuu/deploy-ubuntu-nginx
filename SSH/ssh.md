@@ -1,4 +1,4 @@
-# Instalação do SSH Windows pelo PowerShell/Terminal do Windows [Terminal na MicrosoftStore](https://apps.microsoft.com/detail/9n0dx20hk701?hl=pt-br&gl=BR)
+# Instalação do SSH Windows pelo PowerShell/Terminal do Windows <a href="https://apps.microsoft.com/detail/9n0dx20hk701?hl=pt-br&gl=BR" target="_blank">Terminal na Microsoft Store</a>
 
 - Abra o Terminal ou PowerShell 
 
@@ -14,7 +14,7 @@ ssh
 ```
 - Precisar ser retornado:
 
-<img src"image.png" alt"ssh">
+<img src="image.png" alt="ssh">
 
 # Geração das chave SSH
 
