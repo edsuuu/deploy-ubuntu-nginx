@@ -26,7 +26,6 @@ sudo apt install \
 ```
 ```bash
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-
 ```
 
 ```bash
@@ -47,5 +46,4 @@ sudo apt install docker-ce docker-ce-cli containerd.io -y
 sudo docker run --restart always -d --name database-name -p 3306:3306 \
     -e MYSQL_ROOT_PASSWORD=SUA_SENHA_FORTE Mariadb
 ```
-###-
-[Voltar a Pagina Inicial](README.md) 
+### - [Voltar a Pagina Inicial](../README.md) 

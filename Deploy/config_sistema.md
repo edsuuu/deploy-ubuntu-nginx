@@ -1,3 +1,10 @@
+# Requisitos - Para sua Virtual Machine(VM)/ Servidor Ubuntu 20/22
+
+- Ter criado uma VM seja AWS / CLOUD GOOGLE / AZURE
+- Deixar o IP publico estático
+- Ter portas abertas TCP para HTTP (80) e HTTPS (443) & SSH (22) 
+
+- Ter configurado as chaves SSH para acesso ao terminal [SSH no Windows](SSH/ssh.md)
 
 # Atualização do Sistema e Instalação de dependencias
 
