@@ -31,7 +31,7 @@ nvm use 20
 ###
 
 ```bash
-sudo apt install git curl nginx -y
+sudo apt install git curl  -y
 ```
 
 - PM2 para deploy NODEJS 
@@ -52,12 +52,9 @@ sudo systemctl start nginx
 sudo systemctl status nginx 
 ```
 
-
 ```bash
 sudo systemctl stop nginx 
 ```
-
-
 
 ###
 ### Clonar repositorio 
@@ -72,69 +69,6 @@ git clone https://seurepositorio.com/nome_da_pasta
 chmod -R 750 nome_da_pasta
 ```
 
-###
 ### Configuracão Nginx 
-###
 
-```bash
-cd /etc/nginx/sites-enabled/
-```
-```bash
-sudo rm -rf default
-```
-
-- Gerar um novo arquivo para substituir o default
-
-```bash
-sudo nano seudominio.com.br
-```
-- Colar o script de sua preferencia 
-- Alterar os arquivos antes de colar trocar "seudominio.com.br" para o seu dominio de preferencia
-
-1. [Nginx HTTP](nginx-HTTP.txt)
- 
-- Para HTTPS gerar os certificado SSL antes
-
-2. [Nginx HTTPS](nginx-HTTPS.txt)
-
-```bash
-sudo nano seudominio.com.br
-```
-
-```bash
-sudo nginx -t
-```
-
-```bash
-sudo systemctl restart nginx 
-```
-
-###
-### Gerar Certificado SSL para o seu dominio
-###
-
-```bash
-sudo openssl dhparam -out /etc/ssl/certs/dhparam.pem 2048
-```
-
-```bash
-sudo apt-get install certbot -y
-```
-
-```bash
-sudo service nginx stop
-```
-
-```bash
-sudo certbot certonly --standalone -d seudominio.com.br
-```
-
-```bash
-sudo service nginx start
-```
-
-- Para renovar caso o certificado expire
-
-```bash
-sudo certbot renew
-```
+[Nginx HTTPS](NGINX.md)
