@@ -1,4 +1,4 @@
-# Comandos ubuntu server
+# Comandos Ubuntu Server e Windows
 
 ### Deploy de Aplicação com PM2 e NGINX
 
