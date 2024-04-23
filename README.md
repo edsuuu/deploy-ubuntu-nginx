@@ -2,9 +2,7 @@
 
 ### Preparação do Sistema 
 
-- 1. [Preparação do Sistema](config_sistema.md)
-- 2. [Preparação do Sistema](config_sistema.md)
-- 3. [Preparação do Sistema](config_sistema.md)
+- [Preparação do Sistema](config_sistema.md)
 
 ###
 ### Clonar repositorio 
