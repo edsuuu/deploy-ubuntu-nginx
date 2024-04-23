@@ -5,9 +5,9 @@
 ```bash
 sudo apt update && sudo apt upgrade -y
 ```
-
+###
 ### Passo 2 - Instalação do node
-
+###
 ```bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 ```
@@ -26,8 +26,9 @@ nvm install 20
 nvm use 20
 ```
 
+###
 ### Passo 3 - Instalação de Lib 
-
+###
 
 ```bash
 sudo apt install git curl nginx -y
@@ -39,7 +40,9 @@ sudo apt install git curl nginx -y
 npm i -g pm2
 ```
 
+###
 ### Passo 4 - Nginx COMANDOS
+###
 
 ```bash
 sudo systemctl start nginx 
@@ -49,30 +52,29 @@ sudo systemctl start nginx
 sudo systemctl status nginx 
 ```
 
-```bash
-sudo systemctl restart nginx 
-```
 
 ```bash
 sudo systemctl stop nginx 
 ```
 
-```bash
-sudo nginx -t
-```
 
+
+###
 ### Clonar repositorio 
+###
 
 ```bash
 git clone https://seurepositorio.com/nome_da_pasta
 ```
-PERMISSAO A PASTA 
+- PERMISSAO A PASTA 
 
 ```bash
 chmod -R 750 nome_da_pasta
 ```
 
+###
 ### Configuracão Nginx 
+###
 
 ```bash
 cd /etc/nginx/sites-enabled/
@@ -86,43 +88,30 @@ sudo rm -rf default
 ```bash
 sudo nano seudominio.com.br
 ```
-- Colar O scrip que esta em 
+- Colar o script de sua preferencia 
+- Alterar os arquivos antes de colar trocar "seudominio.com.br" para o seu dominio de preferencia
 
 1. [Nginx HTTP](nginx-HTTP.txt)
+ 
+- Para HTTPS gerar os certificado SSL antes
+
 2. [Nginx HTTPS](nginx-HTTPS.txt)
 
+```bash
+sudo nano seudominio.com.br
+```
 
+```bash
+sudo nginx -t
+```
 
+```bash
+sudo systemctl restart nginx 
+```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+###
 ### Gerar Certificado SSL para o seu dominio
+###
 
 ```bash
 sudo openssl dhparam -out /etc/ssl/certs/dhparam.pem 2048
