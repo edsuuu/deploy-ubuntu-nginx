@@ -17,9 +17,13 @@ ssh
 <img src="image.png" alt="ssh">
 
 # Geração das chave SSH
-
+- Windows 
 ```bash
 ssh-keygen -f "C:\Users\$env:USERNAME\.ssh\nomedachavessh" -t rsa -b 4096
+```
+- Linux 
+```bash
+ssh-keygen -f ~/.ssh/nome_da_chave -t rsa -b 4096
 ```
 - Você pode criar uma senha ou deixar em branco
 
