@@ -36,10 +36,7 @@ Certificado [Certificado SSL](certificado_ssl.md)
 
 Configuraçao [Nginx HTTPS](nginx-HTTPS.md) 
 
-```bash
-sudo nano seudominio.com.br
-```
-- Após colar e salvar o script 
+
 ```bash
 sudo nginx -t && sudo systemctl restart nginx 
 ```
