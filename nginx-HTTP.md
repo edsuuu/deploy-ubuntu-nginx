@@ -1,3 +1,8 @@
+# Configuração Nginx HTTP
+
+[Voltar](NGINX.md)
+
+
 ```bash
 server {
 	listen 80;

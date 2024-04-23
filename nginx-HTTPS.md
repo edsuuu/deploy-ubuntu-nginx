@@ -1,3 +1,9 @@
+# Configuração Nginx HTTPs
+
+[Voltar](NGINX.md)
+
+
+```bash
 # O servidor não vai responder via IP
 server {
   listen 80 default_server;
@@ -106,3 +112,5 @@ server {
 
 	#include /etc/nginx/common/protect.conf;
 }
+
+```
