@@ -1,28 +1,27 @@
 
-# Configuracão Nginx 
+# Instalação do NGINX 
 
 ```bash
 sudo apt install nginx -y && sudo systemctl start nginx
 ```
-- Verificar se o NGINX está funcionando
+
+# Verificar o IP da maquina "Welcome to NGINX"
 
 ```bash
 sudo systemctl status nginx
 ```
-
 - Ou
 
 ```bash
 curl 127.0.0.1
 ```
-
-# Verificar o IP da maquina para ver se ja está renderizando "Welcome to NGINX"
+# Pré Configuração
 
 ```bash
 cd /etc/nginx/sites-enabled/ && sudo rm -rf default
 ```
 
-- Gerar um novo arquivo para substituir o default
+- Gerar um novo arquivo
 
 ```bash
 sudo nano seudominio.com.br
@@ -44,6 +43,6 @@ sudo nano seudominio.com.br
 ```bash
 sudo nginx -t && sudo systemctl restart nginx 
 ```
-
+[Voltar](README.md) 
 
 

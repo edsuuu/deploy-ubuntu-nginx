@@ -1,5 +1,5 @@
 
-# Atualização do Sistema e Instalação de algumas lib
+# Atualização do Sistema e Instalação de dependencias
 
 ```bash
 sudo apt update && sudo apt upgrade -y && sudo apt install git curl -y

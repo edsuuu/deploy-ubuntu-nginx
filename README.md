@@ -1,18 +1,12 @@
-## CRIAR UM SERVIDOR E CONECTAR VIA SSH
+# Deploy de Aplicação
 
-### Preparação do Sistema 
+### Passo a Passo
 
-- [Preparação do Sistema](config_sistema.md)
+1. [Preparação do Sistema](config_sistema.md)
+#
+2. [Configuração do PM2](PM2.md)
+#
+3. [Configuração do NGINX](NGINX.md)
+#
+4. [Certificado SSL](certificado_ssl.md)
 
-###
-### Clonar repositorio 
-###
-
-```bash
-git clone https://seurepositorio.com/nome_da_pasta
-```
-- PERMISSAO A PASTA 
-
-```bash
-chmod -R 750 nome_da_pasta
-```
