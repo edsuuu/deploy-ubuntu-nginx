@@ -1,60 +1,10 @@
-## CRIAR UM SERVIDOR E CONECTAR AS CHAVE SSH
+## CRIAR UM SERVIDOR E CONECTAR VIA SSH
 
-### Passo 1 - Atualizar o S.O
+### Preparação do Sistema 
 
-```bash
-sudo apt update && sudo apt upgrade -y
-```
-###
-### Passo 2 - Instalação do node
-###
-```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
-```
-
-```bash
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-```
-
-```bash
-nvm install 20
-```
-
-```bash
-nvm use 20
-```
-
-###
-### Passo 3 - Instalação de Lib 
-###
-
-```bash
-sudo apt install git curl  -y
-```
-
-- PM2 para deploy NODEJS 
-
-```bash
-npm i -g pm2
-```
-
-###
-### Passo 4 - Nginx COMANDOS
-###
-
-```bash
-sudo systemctl start nginx 
-```
-
-```bash
-sudo systemctl status nginx 
-```
-
-```bash
-sudo systemctl stop nginx 
-```
+- 1. [Preparação do Sistema](config_sistema.md)
+- 2. [Preparação do Sistema](config_sistema.md)
+- 3. [Preparação do Sistema](config_sistema.md)
 
 ###
 ### Clonar repositorio 
@@ -68,7 +18,3 @@ git clone https://seurepositorio.com/nome_da_pasta
 ```bash
 chmod -R 750 nome_da_pasta
 ```
-
-### Configuracão Nginx 
-
-[Nginx HTTPS](NGINX.md)

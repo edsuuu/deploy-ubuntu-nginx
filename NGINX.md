@@ -1,17 +1,27 @@
 
 # Configuracão Nginx 
 
+```bash
+sudo apt install nginx -y && sudo systemctl start nginx
+```
+- Verificar se o NGINX está funcionando
 
 ```bash
-sudo apt install nginx -y
+sudo systemctl status nginx
 ```
-- 
+
+- Ou
+
 ```bash
-cd /etc/nginx/sites-enabled/
+curl 127.0.0.1
 ```
--
+
+###
+### Veriricar o IP da maquina para ver se ja está renderizando "Welcome to NGINX"
+###
+
 ```bash
-sudo rm -rf default
+cd /etc/nginx/sites-enabled/ && sudo rm -rf default
 ```
 
 - Gerar um novo arquivo para substituir o default
@@ -22,53 +32,18 @@ sudo nano seudominio.com.br
 - Colar o script de sua preferencia 
 - Alterar os arquivos antes de colar trocar "seudominio.com.br" para o seu dominio de preferencia
 
-1. [Nginx HTTP](nginx-HTTP.txt)
+1. [Nginx HTTP](nginx-HTTP.md)
  
 - Para HTTPS gerar os certificado SSL antes
 
-2. [Nginx HTTPS](nginx-HTTPS.txt)
+2. [Nginx HTTPS](nginx-HTTPS.md)
 
 ```bash
 sudo nano seudominio.com.br
 ```
 -
 ```bash
-sudo nginx -t
+sudo nginx -t && sudo systemctl restart nginx 
 ```
--
-```bash
-sudo systemctl restart nginx 
-```
+2. [Certificado SSL](certificado_ssl.md)
 
-# Gerar Certificado SSL para o seu dominio
-
-```bash
-sudo openssl dhparam -out /etc/ssl/certs/dhparam.pem 2048
-```
--
-```bash
-sudo apt-get install certbot -y
-```
-- Ou
-
-```bash
-sudo snap install certbot --classic
-```
--
-```bash
-sudo service nginx stop
-```
--
-```bash
-sudo certbot certonly --standalone -d seudominio.com.br
-```
--
-```bash
-sudo service nginx start
-```
-
-- Para renovar caso o certificado expire
-
-```bash
-sudo certbot renew
-```
