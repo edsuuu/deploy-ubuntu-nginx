@@ -4,7 +4,7 @@
 - Deixar o IP publico estático
 - Ter portas abertas TCP para HTTP (80) e HTTPS (443) & SSH (22) 
 
-- Ter configurado as chaves SSH para acesso ao terminal [SSH no Windows](SSH/ssh.md)
+- Ter configurado as chaves SSH para acesso ao terminal [SSH no Windows](../SSH/ssh.md)
 
 # Atualização do Sistema e Instalação de dependencias
 
