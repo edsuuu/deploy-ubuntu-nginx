@@ -43,7 +43,7 @@ sudo apt install docker-ce docker-ce-cli containerd.io -y
 ```
 #### Criando o container do MARIADB
 ```bash
-sudo docker run --restart always -d --name database-name -p 3306:3306 \
-    -e MYSQL_ROOT_PASSWORD=SUA_SENHA_FORTE Mariadb
+sudo docker run --restart always -d --name bdmariadb1 -p 3306:3306 \
+    -e MYSQL_ROOT_PASSWORD=root mariadb
 ```
 ### - [Voltar a Pagina Inicial](../README.md) 
