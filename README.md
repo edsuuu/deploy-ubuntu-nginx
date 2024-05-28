@@ -31,3 +31,9 @@
 2. [SSH Github](SSH/ssh.github.md)
 
 ### -
+
+# OH-MY-ZSH E OH-MY-POSH
+
+### -
+
+1. [ZSH INSTALL](Terminal-ZSH/zsh.md)
